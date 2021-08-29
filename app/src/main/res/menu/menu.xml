@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/people"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/profile"/>
+    <item
+        android:id="@+id/match"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/setting"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="@string/setting"/>
+
+</menu>
