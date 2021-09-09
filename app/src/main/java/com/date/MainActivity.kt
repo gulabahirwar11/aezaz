@@ -12,25 +12,26 @@ import com.date.fragment.ProfileFragment
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding : ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        val binding: ActivityMainBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_main)
         setContentView(binding.root)
 
-        val transactionan =  supportFragmentManager.beginTransaction()
-        binding.bottomNav.setOnItemSelectedListener{
-            when(it.itemId) {
-                R.id.people->{
+        val transactionan = supportFragmentManager.beginTransaction()
+        binding.bottomNav.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.people -> {
                     val fragment = PeopleFragment()
                     transactionan.add(fragment, PeopleFragment::class.java.name)
                 }
-                R.id.like->{
+                R.id.like -> {
                     val fragment = LikeFragment()
                     transactionan.add(fragment, LikeFragment::class.java.name)
                 }
-                R.id.match->{
+                R.id.match -> {
                     val fragment = MatchFragment()
                     transactionan.add(fragment, MatchFragment::class.java.name)
                 }
-                R.id.profile->{
+                R.id.profile -> {
                     val fragment = ProfileFragment()
                     transactionan.add(fragment, ProfileFragment::class.java.name)
                 }
